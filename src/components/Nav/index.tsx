@@ -12,7 +12,7 @@ const Nav = () => {
 	return (
 		<div className="mb-8 flex items-center justify-between">
 			<Logo />
-			<div className="mb-4 flex gap-4 self-end uppercase">
+			<div className="mb-4 mr-4 flex gap-4 self-end uppercase">
 				{links.map(({ title, href }) => {
 					return <NavLink key={href} title={title} href={href} />;
 				})}
