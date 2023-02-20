@@ -10,7 +10,7 @@ const Nav = () => {
 	];
 
 	return (
-		<div className="flex items-center justify-between">
+		<div className="mb-8 flex items-center justify-between">
 			<Logo />
 			<div className="mb-4 flex gap-4 self-end uppercase">
 				{links.map(({ title, href }) => {
