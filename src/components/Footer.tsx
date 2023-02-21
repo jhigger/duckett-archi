@@ -1,6 +1,30 @@
 import Logo from "./Logo";
 
+type FooterLinkType = {
+	title: string;
+	link: string;
+};
+
 const Footer = () => {
+	const footerLinks: FooterLinkType[] = [
+		{
+			title: "footer link 1",
+			link: "#",
+		},
+		{
+			title: "footer link 2",
+			link: "#",
+		},
+		{
+			title: "footer link 3",
+			link: "#",
+		},
+		{
+			title: "footer link 4",
+			link: "#",
+		},
+	];
+
 	return (
 		<footer className="mt-8 flex items-center justify-center gap-16 p-8">
 			<Logo />
@@ -20,26 +44,19 @@ const Footer = () => {
 				</p>
 			</div>
 			<ul className="flex flex-col items-center justify-center gap-2">
-				<li>
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						footer link 1
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						footer link 2
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						footer link 3
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						footer link 4
-					</a>
-				</li>
+				{footerLinks.map((item, i) => {
+					return (
+						<li key={i}>
+							<a
+								href={item.link}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{item.title}
+							</a>
+						</li>
+					);
+				})}
 			</ul>
 			<ul className="flex items-center justify-center gap-4">
 				<li>
