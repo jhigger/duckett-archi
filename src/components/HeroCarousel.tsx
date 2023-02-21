@@ -9,7 +9,7 @@ const HeroCarousel = ({ children }: Props) => {
 	const splideRef = useRef<Splide | null>(null);
 
 	return (
-		<div className="relative">
+		<div className="relative mb-16">
 			<Content
 				ref={splideRef}
 				slides={children}
