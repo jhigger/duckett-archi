@@ -1,8 +1,8 @@
 import "@splidejs/react-splide/css";
 import { type NextPage } from "next";
 import Head from "next/head";
-import ProjectCard from "~/components/ProjectCard";
 import HeroCarousel from "~/components/HeroCarousel";
+import ProjectCard from "~/components/ProjectCard";
 
 const Home: NextPage = () => {
 	return (
