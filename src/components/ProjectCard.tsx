@@ -16,7 +16,10 @@ const ProjectCard = () => {
 			</div>
 			<div className="absolute top-[100%] flex h-full w-full flex-col justify-end gap-4 bg-primary p-8 opacity-60 transition-all duration-300 ease-in-out group-hover:top-0">
 				<h3 className="text-4xl font-bold">Title</h3>
-				<Link href="#" className="flex w-max items-center gap-4">
+				<Link
+					href="#"
+					className="flex w-max items-center gap-4 self-end hover:text-white"
+				>
 					<p>See Project</p>
 					<BsChevronRight size={24} />
 				</Link>
