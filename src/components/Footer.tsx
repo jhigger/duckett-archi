@@ -26,8 +26,10 @@ const Footer = () => {
 	];
 
 	return (
-		<footer className="mt-8 flex items-center justify-center gap-16 p-8">
-			<Logo />
+		<footer className="mt-8 grid grid-cols-1 place-items-center gap-16 p-8 text-center lg:grid-cols-2 xl:grid-cols-5">
+			<div className="lg:col-span-2 row-span-1">
+				<Logo />
+			</div>
 			<div className="flex flex-col items-center justify-center gap-4">
 				<p className="font-bold">&copy; Ducktt Architecture</p>
 				<p className="font-bold">All Rights Reserved</p>
@@ -43,7 +45,7 @@ const Footer = () => {
 					</a>
 				</p>
 			</div>
-			<ul className="flex flex-col items-center justify-center gap-2">
+			<ul className="row-span-2 flex flex-col items-center justify-center gap-2 lg:row-span-1">
 				{footerLinks.map(({ title, href }, i) => {
 					return (
 						<li key={i}>
