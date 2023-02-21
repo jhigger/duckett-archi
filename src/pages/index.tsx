@@ -1,6 +1,7 @@
 import "@splidejs/react-splide/css";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Button from "~/components/Button";
 import HeroCarousel from "~/components/HeroCarousel";
 import ProjectCard from "~/components/ProjectCard";
 
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
 				</HeroCarousel>
 
 				<ProjectCard />
+				<Button title="BUTTON CTA" />
 			</main>
 		</>
 	);
