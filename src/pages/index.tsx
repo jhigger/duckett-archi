@@ -11,7 +11,17 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<Carousel />
+				<Carousel>
+					<div className="flex h-full items-center justify-center bg-blue-500">
+						1
+					</div>
+					<div className="flex h-full items-center justify-center bg-red-500">
+						2
+					</div>
+					<div className="flex h-full items-center justify-center bg-green-500">
+						3
+					</div>
+				</Carousel>
 			</main>
 		</>
 	);
