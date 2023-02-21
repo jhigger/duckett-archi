@@ -1,7 +1,8 @@
 import "@splidejs/react-splide/css";
 import { type NextPage } from "next";
 import Head from "next/head";
-import Carousel from "~/components/Carousel";
+import ProjectCard from "~/components/ProjectCard";
+import HeroCarousel from "~/components/HeroCarousel";
 
 const Home: NextPage = () => {
 	return (
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<Carousel>
+				<HeroCarousel>
 					<div className="flex h-full items-center justify-center bg-blue-500">
 						1
 					</div>
@@ -21,7 +22,9 @@ const Home: NextPage = () => {
 					<div className="flex h-full items-center justify-center bg-green-500">
 						3
 					</div>
-				</Carousel>
+				</HeroCarousel>
+
+				<ProjectCard />
 			</main>
 		</>
 	);
