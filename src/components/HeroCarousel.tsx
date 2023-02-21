@@ -9,7 +9,7 @@ const HeroCarousel = ({ children }: Props) => {
 	const splideRef = useRef<Splide | null>(null);
 
 	return (
-		<div className="relative mb-16">
+		<section className="relative mb-16">
 			<Content
 				ref={splideRef}
 				slides={children}
@@ -18,7 +18,7 @@ const HeroCarousel = ({ children }: Props) => {
 			<div className="absolute right-24 bottom-12">
 				<Arrows splideRef={splideRef} color="white" />
 			</div>
-		</div>
+		</section>
 	);
 };
 
