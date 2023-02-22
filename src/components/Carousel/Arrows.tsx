@@ -1,11 +1,15 @@
 import { type Splide } from "@splidejs/react-splide";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-type Props = { splideRef: React.RefObject<Splide | null>; color: string };
+type Props = {
+	splideRef: React.RefObject<Splide | null>;
+	color: string;
+	className: string;
+};
 
-const Arrows = ({ splideRef: ref, color }: Props) => {
+const Arrows = ({ splideRef: ref, color, className }: Props) => {
 	return (
-		<div className="flex gap-8">
+		<div className={`flex gap-8 ${className}`}>
 			<button
 				onClick={() => {
 					if (ref !== null && ref.current) {

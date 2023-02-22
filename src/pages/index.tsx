@@ -4,6 +4,7 @@ import Head from "next/head";
 import Button from "~/components/Button";
 import HeroCarousel from "~/components/HeroCarousel";
 import ProjectCard from "~/components/ProjectCard";
+import ProjectCarousel from "~/components/ProjectCarousel";
 
 const Home: NextPage = () => {
 	return (
@@ -25,7 +26,14 @@ const Home: NextPage = () => {
 					</div>
 				</HeroCarousel>
 
-				<ProjectCard />
+				<ProjectCarousel>
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+				</ProjectCarousel>
+
 				<Button title="BUTTON CTA" />
 			</main>
 		</>
