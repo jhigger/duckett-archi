@@ -27,7 +27,7 @@ const Footer = () => {
 
 	return (
 		<footer className="mt-8 grid grid-cols-1 place-items-center gap-16 p-8 text-center lg:grid-cols-2 xl:grid-cols-5">
-			<div className="lg:col-span-2 row-span-1">
+			<div className=" row-span-1 lg:col-span-2">
 				<Logo />
 			</div>
 			<div className="flex flex-col items-center justify-center gap-4">
