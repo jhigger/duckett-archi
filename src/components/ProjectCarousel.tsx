@@ -23,6 +23,12 @@ const ProjectCarousel = ({ title, children }: Props) => {
 					pagination: false,
 					type: "loop",
 					perMove: 1,
+					breakpoints: {
+						480: {
+							autoWidth: false,
+							fixedWidth: "347px",
+						},
+					},
 				}}
 			/>
 			<div className="self-end">
