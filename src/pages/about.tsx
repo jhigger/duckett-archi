@@ -21,7 +21,7 @@ const About = () => {
 					<h2 className="mb-4 text-2xl uppercase text-primary">
 						Our Story
 					</h2>
-					<p className="w-10/12 self-end">
+					<p className="lg:w-10/12 lg:self-end">
 						The year 2022 marked a significant milestone and
 						celebration for the practice, marking It&apos;s
 						&lsquo;40 years in the business. What Colin has
@@ -31,7 +31,7 @@ const About = () => {
 						plethora of experience in all aspects & avenues of
 						design considerations.
 					</p>
-					<p className="w-10/12 self-end">
+					<p className="lg:w-10/12 lg:self-end">
 						In his personal capacity, Colin&apos;s continuous
 						development and a multitude of projects under his belt
 						both nationally and internationally with the greatest
@@ -40,7 +40,7 @@ const About = () => {
 						further pushing the boundaries to what he is able to
 						contribute to a well-shaped built environment.
 					</p>
-					<p className="w-10/12 self-end">
+					<p className="lg:w-10/12 lg:self-end">
 						As of April 2022, senior staff member Marcell
 						Thangamuthu has been introduced as a partner to the
 						practice. Marcell, joining Duckett Architecture in 2018
@@ -50,7 +50,7 @@ const About = () => {
 						commercial projects in the office, with new developments
 						from inception to completion.
 					</p>
-					<p className="w-10/12 self-end">
+					<p className="lg:w-10/12 lg:self-end">
 						In more recent times Marcell has gotten into the
 						developed design stage of boutique residential and
 						multi-residential development&apos;s where limited
@@ -64,7 +64,7 @@ const About = () => {
 					<h2 className="mb-4 text-2xl uppercase text-primary">
 						What we do
 					</h2>
-					<p className="w-10/12 self-end">
+					<p className="lg:w-10/12 lg:self-end">
 						Be it a tiny home or a major turn-key development
 						integrating multi-disciplinary consortiums, we are eager
 						and willing to provide the most suitable, sustainable
