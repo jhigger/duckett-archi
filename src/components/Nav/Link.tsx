@@ -5,7 +5,7 @@ type Props = { title: string; href: string };
 
 const NavLink = ({ title, href }: Props) => {
 	const router = useRouter();
-	const color = router.pathname === href ? "text-primary" : "text-black";
+	const color = router.pathname === href ? "text-primary" : "text-inherit";
 	return (
 		<Link
 			href={href}
