@@ -4,10 +4,10 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 type Props = {
 	splideRef: React.RefObject<Splide | null>;
 	color: string;
-	className: string;
+	className?: string;
 };
 
-const Arrows = ({ splideRef: ref, color, className }: Props) => {
+const Arrows = ({ splideRef: ref, color, className = "" }: Props) => {
 	return (
 		<div className={`flex gap-8 ${className}`}>
 			<button
