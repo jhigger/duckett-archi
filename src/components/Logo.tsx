@@ -10,7 +10,7 @@ const Logo = () => {
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 				xmlnsXlink="http://www.w3.org/1999/xlink"
-				className="max-w-[10rem] sm:max-w-sm md:max-w-md"
+				className="max-w-[10rem] sm:max-w-sm lg:max-w-full"
 			>
 				<rect width="516" height="104" fill="url(#pattern0)" />
 				<defs>
