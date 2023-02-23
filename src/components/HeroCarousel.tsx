@@ -13,7 +13,11 @@ const HeroCarousel = ({ children }: Props) => {
 			<Content
 				ref={splideRef}
 				slides={children}
-				options={{ arrows: false, rewind: true, height: 720 }}
+				options={{
+					arrows: false,
+					rewind: true,
+					heightRatio: 0.5625,
+				}}
 			/>
 			<div className="absolute right-24 bottom-12">
 				<Arrows splideRef={splideRef} color="white" />
