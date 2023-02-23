@@ -31,7 +31,7 @@ const Footer = () => {
 				<Logo />
 			</div>
 			<div className="flex flex-col items-center justify-center gap-4">
-				<p className="font-bold">&copy; Ducktt Architecture</p>
+				<p className="font-bold">&copy; Duckett Architecture Ltd.</p>
 				<p className="font-bold">All Rights Reserved</p>
 				<p>
 					Web Design by{" "}
