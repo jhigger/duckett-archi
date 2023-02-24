@@ -41,7 +41,7 @@ const Footer = () => {
 						rel="noopener noreferrer"
 						className="text-primary"
 					>
-						SG Designs
+						SG&nbsp;Designs
 					</a>
 				</p>
 			</div>
