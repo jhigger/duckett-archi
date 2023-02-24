@@ -10,3 +10,9 @@
 		border: 1px solid green;
 	}
 }
+
+@layer utilities {
+	.clip {
+		clip-path: polygon(0 0, 75% 0, 25% 100%, 0% 100%);
+	}
+}

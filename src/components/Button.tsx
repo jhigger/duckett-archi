@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
 }: ButtonProps) => {
 	return (
 		<button
-			className={`rounded-full bg-primary px-8 py-2 text-white transition-all duration-75 ease-out hover:brightness-110 active:scale-95 active:brightness-90 ${className}`}
+			className={`rounded-full bg-primary px-8 py-2 text-sm font-bold tracking-widest text-white transition-all duration-75 ease-in-out hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 ${className}`}
 			{...rest}
 		>
 			{title}
