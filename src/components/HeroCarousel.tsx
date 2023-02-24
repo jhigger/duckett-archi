@@ -11,7 +11,7 @@ const HeroCarousel = ({ children }: Props) => {
 	const [length, setLength] = useState<number>(0);
 
 	useEffect(() => {
-		splideRef.current?.splide?.event.on("active", () => {
+		splideRef.current?.splide?.event.on("move", () => {
 			if (splideRef.current?.splide) {
 				setIndex(splideRef.current.splide.index + 1);
 			}
