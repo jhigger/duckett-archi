@@ -7,7 +7,6 @@ const Contact = () => {
 		<>
 			<Head>
 				<title>Contact | Duckett Architecture</title>
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
 				<h1 className="mb-4 text-center text-4xl font-bold tracking-widest">

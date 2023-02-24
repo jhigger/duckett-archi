@@ -21,6 +21,7 @@ class MyDocument extends Document {
 						name="keywords"
 						content="Duckett Architecture, architecture, architects, Palmerston North, architectural designers, Palmerston North architects"
 					/>
+					<link rel="icon" href="/favicon.ico" />
 					<link rel="shortcut icon" href="/favicon.ico" />
 
 					<link

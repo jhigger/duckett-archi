@@ -11,7 +11,6 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<title>Duckett Architecture</title>
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
 				<HeroCarousel>
