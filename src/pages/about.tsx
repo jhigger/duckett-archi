@@ -28,13 +28,16 @@ const About = () => {
 						</h2>
 						<p className="lg:w-10/12 lg:self-end">
 							The year 2022 marked a significant milestone and
-							celebration for the practice, marking It&apos;s
-							&lsquo;40 years in the business. What Colin has
-							established in 1982 has moved and continues to flow
-							from strength to strength gaining, maintaining, and
-							adding to the ever-evolving building industry
-							resulting in a plethora of experience in all aspects
-							& avenues of design considerations.
+							celebration for the practice, marking It&apos;s{" "}
+							<span className="font-bold">
+								&lsquo;40 years in the business&rsquo;
+							</span>
+							. What Colin has established in 1982 has moved and
+							continues to flow from strength to strength gaining,
+							maintaining, and adding to the ever-evolving
+							building industry resulting in a plethora of
+							experience in all aspects & avenues of design
+							considerations.
 						</p>
 						<p className="lg:w-10/12 lg:self-end">
 							In his personal capacity, Colin&apos;s continuous
