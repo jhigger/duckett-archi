@@ -12,6 +12,7 @@ const Arrows = ({ splideRef: ref, color, className = "", children }: Props) => {
 	return (
 		<div className={`flex gap-8 ${className}`}>
 			<button
+				aria-label="previous-button"
 				onClick={() => {
 					if (ref !== null && ref.current) {
 						ref.current?.go("<");
@@ -22,6 +23,7 @@ const Arrows = ({ splideRef: ref, color, className = "", children }: Props) => {
 			</button>
 			{children}
 			<button
+				aria-label="next-button"
 				onClick={() => {
 					if (ref !== null && ref.current) {
 						ref.current?.go(">");
