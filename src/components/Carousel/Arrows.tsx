@@ -5,9 +5,10 @@ type Props = {
 	splideRef: React.RefObject<Splide | null>;
 	color: string;
 	className?: string;
+	children?: JSX.Element | JSX.Element[];
 };
 
-const Arrows = ({ splideRef: ref, color, className = "" }: Props) => {
+const Arrows = ({ splideRef: ref, color, className = "", children }: Props) => {
 	return (
 		<div className={`flex gap-8 ${className}`}>
 			<button
@@ -19,6 +20,7 @@ const Arrows = ({ splideRef: ref, color, className = "" }: Props) => {
 			>
 				<BsChevronLeft size={24} color={color} />
 			</button>
+			{children}
 			<button
 				onClick={() => {
 					if (ref !== null && ref.current) {
