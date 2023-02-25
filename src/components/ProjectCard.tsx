@@ -2,18 +2,20 @@
 import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
 
-const ProjectCard = () => {
+type Props = { src: string; title: string; link: string };
+
+const ProjectCard = ({ src, title, link }: Props) => {
 	return (
 		<div className="group relative h-min overflow-hidden">
 			<img
 				alt="project"
-				src="https://via.placeholder.com/1080x720?text=Image"
+				src={src}
 				className="h-[512px] w-[384px] object-cover object-center"
 			/>
 			<div className="absolute top-[100%] flex h-full w-full flex-col justify-end gap-4 bg-primary p-8 opacity-60 transition-all duration-300 ease-in-out group-hover:top-0">
-				<h3 className="text-4xl font-bold">Title</h3>
+				<h3 className="text-4xl font-bold">{title}</h3>
 				<Link
-					href="#"
+					href={link}
 					className="flex w-max items-center gap-4 self-end hover:text-white"
 				>
 					<p>See Project</p>

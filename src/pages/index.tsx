@@ -49,11 +49,31 @@ const Home: NextPage = () => {
 				</HeroCarousel>
 
 				<ProjectCarousel title="Latest Projects">
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
+					<ProjectCard
+						src={"https://via.placeholder.com/1080x720?text=Image"}
+						title={"Title"}
+						link={"#"}
+					/>
+					<ProjectCard
+						src={"https://via.placeholder.com/1080x720?text=Image"}
+						title={"Title"}
+						link={"#"}
+					/>
+					<ProjectCard
+						src={"https://via.placeholder.com/1080x720?text=Image"}
+						title={"Title"}
+						link={"#"}
+					/>
+					<ProjectCard
+						src={"https://via.placeholder.com/1080x720?text=Image"}
+						title={"Title"}
+						link={"#"}
+					/>
+					<ProjectCard
+						src={"https://via.placeholder.com/1080x720?text=Image"}
+						title={"Title"}
+						link={"#"}
+					/>
 				</ProjectCarousel>
 
 				<GetInTouch />
