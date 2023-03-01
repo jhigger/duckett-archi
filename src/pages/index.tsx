@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 					</div>
 				</HeroCarousel>
 
-				<ul className="flex items-center justify-end gap-4">
+				<ul className="flex items-center justify-end gap-8 tracking-widest">
 					{filters.map(({ title }) => {
 						const textColor =
 							active === title ? "text-primary" : "text-inherit";
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
 						return (
 							<li key={title} className={`${textColor}`}>
 								<button
-									className=""
+									className="font-bold"
 									onClick={() => handleActive(title)}
 								>
 									{title}
@@ -79,8 +79,11 @@ const Home: NextPage = () => {
 						);
 					})}
 
-					<li className="">
-						<Link href="/gallery" className="">
+					<li>
+						<Link
+							href="/gallery"
+							className="font-bold text-gray-500"
+						>
 							View all
 						</Link>
 					</li>
@@ -88,121 +91,58 @@ const Home: NextPage = () => {
 
 				{["All", "Residential"].includes(active) && (
 					<ProjectCarousel title="Residential">
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
+						{Array(5)
+							.fill(null)
+							.map((_, i) => {
+								return (
+									<ProjectCard
+										key={i}
+										src={
+											"https://via.placeholder.com/1080x720?text=Image"
+										}
+										title={"Title"}
+										link={"#"}
+									/>
+								);
+							})}
 					</ProjectCarousel>
 				)}
 
 				{["All", "Commercial"].includes(active) && (
 					<ProjectCarousel title="Commercial">
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
+						{Array(5)
+							.fill(null)
+							.map((_, i) => {
+								return (
+									<ProjectCard
+										key={i}
+										src={
+											"https://via.placeholder.com/1080x720?text=Image"
+										}
+										title={"Title"}
+										link={"#"}
+									/>
+								);
+							})}
 					</ProjectCarousel>
 				)}
 
 				{["All", "Concepts"].includes(active) && (
 					<ProjectCarousel title="Concepts">
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
-						<ProjectCard
-							src={
-								"https://via.placeholder.com/1080x720?text=Image"
-							}
-							title={"Title"}
-							link={"#"}
-						/>
+						{Array(5)
+							.fill(null)
+							.map((_, i) => {
+								return (
+									<ProjectCard
+										key={i}
+										src={
+											"https://via.placeholder.com/1080x720?text=Image"
+										}
+										title={"Title"}
+										link={"#"}
+									/>
+								);
+							})}
 					</ProjectCarousel>
 				)}
 
