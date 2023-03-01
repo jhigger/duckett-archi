@@ -2,6 +2,8 @@
 import "@splidejs/react-splide/css";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
+import { useState } from "react";
 import Button from "~/components/Button";
 import GetInTouch from "~/components/GetInTouch";
 import HeroCarousel from "~/components/HeroCarousel";
@@ -9,6 +11,18 @@ import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
 
 const Home: NextPage = () => {
+	const [active, setActive] = useState("All");
+	const filters = [
+		{ title: "All" },
+		{ title: "Residential" },
+		{ title: "Commercial" },
+		{ title: "Concepts" },
+	];
+
+	const handleActive = (title: string) => {
+		setActive(title);
+	};
+
 	return (
 		<>
 			<Head>
@@ -48,33 +62,149 @@ const Home: NextPage = () => {
 					</div>
 				</HeroCarousel>
 
-				<ProjectCarousel title="Latest Projects">
-					<ProjectCard
-						src={"https://via.placeholder.com/1080x720?text=Image"}
-						title={"Title"}
-						link={"#"}
-					/>
-					<ProjectCard
-						src={"https://via.placeholder.com/1080x720?text=Image"}
-						title={"Title"}
-						link={"#"}
-					/>
-					<ProjectCard
-						src={"https://via.placeholder.com/1080x720?text=Image"}
-						title={"Title"}
-						link={"#"}
-					/>
-					<ProjectCard
-						src={"https://via.placeholder.com/1080x720?text=Image"}
-						title={"Title"}
-						link={"#"}
-					/>
-					<ProjectCard
-						src={"https://via.placeholder.com/1080x720?text=Image"}
-						title={"Title"}
-						link={"#"}
-					/>
-				</ProjectCarousel>
+				<ul className="flex items-center justify-end gap-4">
+					{filters.map(({ title }) => {
+						const textColor =
+							active === title ? "text-primary" : "text-inherit";
+
+						return (
+							<li key={title} className={`${textColor}`}>
+								<button
+									className=""
+									onClick={() => handleActive(title)}
+								>
+									{title}
+								</button>
+							</li>
+						);
+					})}
+
+					<li className="">
+						<Link href="/gallery" className="">
+							View all
+						</Link>
+					</li>
+				</ul>
+
+				{["All", "Residential"].includes(active) && (
+					<ProjectCarousel title="Residential">
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+					</ProjectCarousel>
+				)}
+
+				{["All", "Commercial"].includes(active) && (
+					<ProjectCarousel title="Commercial">
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+					</ProjectCarousel>
+				)}
+
+				{["All", "Concepts"].includes(active) && (
+					<ProjectCarousel title="Concepts">
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+						<ProjectCard
+							src={
+								"https://via.placeholder.com/1080x720?text=Image"
+							}
+							title={"Title"}
+							link={"#"}
+						/>
+					</ProjectCarousel>
+				)}
 
 				<GetInTouch />
 			</main>
