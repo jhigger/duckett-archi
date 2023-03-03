@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Button from "~/components/Button";
+import Form from "~/components/Form";
 
 /* eslint-disable @next/next/no-img-element */
 const Contact = () => {
@@ -94,13 +94,7 @@ const Contact = () => {
 							Work with us
 						</h2>
 						<div className="flex flex-col gap-2 lg:w-10/12 lg:self-end">
-							<div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
-								<input className="h-16 w-full rounded bg-gray-300"></input>
-								<input className="h-16 w-full rounded bg-gray-300"></input>
-								<input className="h-16 w-full rounded bg-gray-300"></input>
-							</div>
-							<input className="h-44 w-full rounded bg-gray-300"></input>
-							<Button title="BUTTON CTA" className="w-max" />
+							<Form />
 						</div>
 					</section>
 				</div>
