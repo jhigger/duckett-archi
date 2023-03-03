@@ -36,8 +36,8 @@ const Home: NextPage = () => {
 							alt="slide"
 							className="h-full w-full object-cover object-center"
 						/>
-						<div className="clip absolute h-full w-full flex-col justify-center bg-primary opacity-60"></div>
-						<div className="absolute grid h-full w-full grid-cols-2 place-items-center p-8">
+						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
+						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
 								<h2 className="text-4xl font-bold">Title</h2>
 								<p className="text-xl">
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 					</div>
 				</HeroCarousel>
 
-				<ul className="flex items-center justify-end gap-8 tracking-widest">
+				<ul className="hidden items-center justify-end gap-8 tracking-widest md:flex">
 					{filters.map(({ title }) => {
 						const textColor =
 							active === title ? "text-primary" : "text-inherit";

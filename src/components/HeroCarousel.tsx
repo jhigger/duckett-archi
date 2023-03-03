@@ -23,7 +23,7 @@ const HeroCarousel = ({ children }: Props) => {
 	}, [splideRef]);
 
 	return (
-		<section className="relative mb-16">
+		<section className="relative mb-16 overflow-hidden rounded-3xl">
 			<Content
 				ref={splideRef}
 				slides={children}
@@ -31,9 +31,14 @@ const HeroCarousel = ({ children }: Props) => {
 					arrows: false,
 					rewind: true,
 					heightRatio: 0.5625,
+					breakpoints: {
+						425: {
+							heightRatio: 1.5625,
+						},
+					},
 				}}
 			/>
-			<div className="absolute top-1/4 right-24 text-4xl text-gray-500">
+			<div className="absolute top-12 right-12 text-4xl text-gray-500 md:right-24 md:top-1/4">
 				<span className="text-6xl text-primary">
 					{index.toLocaleString("en-US", {
 						minimumIntegerDigits: 2,
@@ -46,7 +51,7 @@ const HeroCarousel = ({ children }: Props) => {
 					useGrouping: false,
 				})}
 			</div>
-			<div className="absolute right-24 bottom-12">
+			<div className="absolute right-12 bottom-12 md:right-24">
 				<Arrows splideRef={splideRef} color="white" />
 			</div>
 		</section>
