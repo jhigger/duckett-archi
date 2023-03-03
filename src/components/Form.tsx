@@ -30,7 +30,13 @@ const Form = () => {
 				placeholder="Message"
 				className="h-44 w-full rounded bg-gray-200 p-4"
 			></textarea>
-			<Button type="submit" title="Submit" className="my-4 w-max" />
+			<div className="flex items-center justify-center lg:block">
+				<Button
+					type="submit"
+					title="Submit"
+					className="my-4 mx-auto w-max"
+				/>
+			</div>
 		</form>
 	);
 };
