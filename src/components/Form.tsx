@@ -1,11 +1,10 @@
 import Button from "./Button";
 
+const email = "nekuvoto@mailgolem.com";
+
 const Form = () => {
 	return (
-		<form
-			action="https://formsubmit.co/nekuvoto@mailgolem.com"
-			method="POST"
-		>
+		<form action={"https://formsubmit.co/" + email} method="POST">
 			<div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
 				<input
 					type="text"
