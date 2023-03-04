@@ -3,6 +3,21 @@ import GetInTouch from "~/components/GetInTouch";
 
 /* eslint-disable @next/next/no-img-element */
 const About = () => {
+	const list = [
+		"Residential",
+		"Commercial",
+		"Industrial",
+		"Educational",
+		"Institutional",
+		"Assembly",
+		"Urban Design",
+		"Social Housing",
+		"Feasibility Studies",
+		"Project Administration",
+		"Conceptual Design",
+		"Hard Landscape",
+	];
+
 	return (
 		<>
 			<Head>
@@ -82,6 +97,13 @@ const About = () => {
 							developers alike with the best well-informed advice
 							on taking their next steps to further their vision.
 						</p>
+						<ul className="pl-6 flex list-disc flex-col gap-2 lg:w-10/12 lg:self-end">
+							{list.map((item, i) => (
+								<li key={i} className="font-bold">
+									{item}
+								</li>
+							))}
+						</ul>
 					</section>
 
 					<GetInTouch />
