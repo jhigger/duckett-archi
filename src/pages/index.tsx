@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 								</p>
 								<Button
 									title="BUTTON CTA"
-									className="mt-8 w-max"
+									className="mt-8 w-max bg-white text-primary"
 								/>
 							</div>
 						</div>

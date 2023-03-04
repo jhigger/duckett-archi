@@ -34,7 +34,7 @@ const Form = () => {
 				<Button
 					type="submit"
 					title="Submit"
-					className="my-4 mx-auto w-max"
+					className="my-4 mx-auto w-max text-white"
 				/>
 			</div>
 		</form>
