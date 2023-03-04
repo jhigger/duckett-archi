@@ -10,7 +10,7 @@ type Props = {
 
 const ProjectCard = ({ src, title, link }: Props) => {
 	return (
-		<div className="group relative h-min overflow-hidden">
+		<div className="group relative h-min overflow-hidden rounded-3xl">
 			<img
 				alt="project"
 				src={src}
