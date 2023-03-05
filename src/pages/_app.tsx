@@ -6,7 +6,7 @@ import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
 	return (
-		<div className="min-h-screen p-8">
+		<div className="min-h-screen p-4 lg:p-8 ">
 			<Nav />
 
 			<Component {...pageProps} />
