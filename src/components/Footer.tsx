@@ -1,5 +1,5 @@
+import { FaFacebookSquare, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 import Logo from "./Logo";
-import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 
 type FooterLinkType = {
 	title: string;
@@ -64,7 +64,17 @@ const Footer = () => {
 			<ul className="flex items-center justify-center gap-4">
 				<li>
 					<a href="#" target="_blank" rel="noopener noreferrer">
+						<FaTwitter size={24} />
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank" rel="noopener noreferrer">
 						<FaFacebookSquare size={24} />
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						<FaInstagram size={24} />
 					</a>
 				</li>
 				<li>

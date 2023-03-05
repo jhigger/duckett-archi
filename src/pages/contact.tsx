@@ -1,4 +1,10 @@
 import Head from "next/head";
+import {
+	FaFacebookSquare,
+	FaGoogle,
+	FaInstagram,
+	FaTwitter,
+} from "react-icons/fa";
 import Form from "~/components/Form";
 
 /* eslint-disable @next/next/no-img-element */
@@ -80,9 +86,42 @@ const Contact = () => {
 								<div>
 									<h3>Follow Us</h3>
 									<ul className="flex gap-4">
-										<li>social 1</li>
-										<li>social 2</li>
-										<li>social 3</li>
+										<li>
+											<a
+												href="#"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<FaTwitter size={24} />
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<FaFacebookSquare size={24} />
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<FaInstagram size={24} />
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<FaGoogle size={24} />
+											</a>
+										</li>
 									</ul>
 								</div>
 							</div>
