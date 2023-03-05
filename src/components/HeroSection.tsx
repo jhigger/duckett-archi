@@ -14,7 +14,7 @@ const HeroSection = ({ title, imageSrc }: Props) => {
 				src={imageSrc}
 				width={1080}
 				height={720}
-				className="mb-8 max-h-[720px] w-screen object-cover object-center"
+				className="mb-8 max-h-[720px] w-screen rounded-3xl object-cover object-center"
 			/>
 		</div>
 	);
