@@ -12,8 +12,6 @@ const HeroSection = ({ title, imageSrc }: Props) => {
 			<img
 				alt="hero image"
 				src={imageSrc}
-				width={1080}
-				height={720}
 				className="mb-8 aspect-video w-full rounded-3xl object-cover object-center"
 			/>
 		</div>
