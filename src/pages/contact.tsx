@@ -1,12 +1,7 @@
 import Head from "next/head";
-import {
-	FaFacebookSquare,
-	FaGoogle,
-	FaInstagram,
-	FaTwitter,
-} from "react-icons/fa";
 import Form from "~/components/Form";
 import HeroSection from "~/components/HeroSection";
+import Socials from "~/components/Socials";
 
 const Contact = () => {
 	return (
@@ -79,42 +74,7 @@ const Contact = () => {
 								<div>
 									<h3>Follow Us</h3>
 									<ul className="flex gap-4">
-										<li>
-											<a
-												href="#"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<FaTwitter size={24} />
-											</a>
-										</li>
-										<li>
-											<a
-												href="#"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<FaFacebookSquare size={24} />
-											</a>
-										</li>
-										<li>
-											<a
-												href="#"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<FaInstagram size={24} />
-											</a>
-										</li>
-										<li>
-											<a
-												href="#"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<FaGoogle size={24} />
-											</a>
-										</li>
+										<Socials />
 									</ul>
 								</div>
 							</div>
