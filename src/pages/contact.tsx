@@ -6,8 +6,8 @@ import {
 	FaTwitter,
 } from "react-icons/fa";
 import Form from "~/components/Form";
+import HeroSection from "~/components/HeroSection";
 
-/* eslint-disable @next/next/no-img-element */
 const Contact = () => {
 	return (
 		<>
@@ -15,16 +15,9 @@ const Contact = () => {
 				<title>Contact | Duckett Architecture</title>
 			</Head>
 			<main>
-				<h1 className="mb-4 text-center text-4xl font-bold tracking-widest">
-					Contact Us
-				</h1>
-
-				<img
-					alt="project"
-					src="https://via.placeholder.com/1080x720?text=Image"
-					width={1080}
-					height={720}
-					className="mb-8 max-h-[720px] w-screen object-cover object-center"
+				<HeroSection
+					title="Contact Us"
+					imageSrc="https://via.placeholder.com/1080x720?text=Image"
 				/>
 
 				<div className="container mx-auto flex flex-col gap-8 last:mb-32">

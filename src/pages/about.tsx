@@ -1,7 +1,7 @@
 import Head from "next/head";
 import GetInTouch from "~/components/GetInTouch";
+import HeroSection from "~/components/HeroSection";
 
-/* eslint-disable @next/next/no-img-element */
 const About = () => {
 	const list = [
 		"Residential",
@@ -24,16 +24,9 @@ const About = () => {
 				<title>About | Duckett Architecture</title>
 			</Head>
 			<main>
-				<h1 className="mb-4 text-center text-4xl font-bold tracking-widest">
-					About Us
-				</h1>
-
-				<img
-					alt="project"
-					src="https://via.placeholder.com/1080x720?text=Image"
-					width={1080}
-					height={720}
-					className="mb-8 max-h-[720px] w-screen object-cover object-center"
+				<HeroSection
+					title="About Us"
+					imageSrc="https://via.placeholder.com/1080x720?text=Image"
 				/>
 
 				<div className="container mx-auto flex flex-col gap-8">
@@ -97,7 +90,7 @@ const About = () => {
 							developers alike with the best well-informed advice
 							on taking their next steps to further their vision.
 						</p>
-						<ul className="pl-6 flex list-disc flex-col gap-2 lg:w-10/12 lg:self-end">
+						<ul className="flex list-disc flex-col gap-2 pl-6 lg:w-10/12 lg:self-end">
 							{list.map((item, i) => (
 								<li key={i} className="font-bold">
 									{item}
