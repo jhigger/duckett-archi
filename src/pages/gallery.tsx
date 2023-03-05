@@ -3,7 +3,7 @@ import GetInTouch from "~/components/GetInTouch";
 import HeroSection from "~/components/HeroSection";
 import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
-import { residentials } from "~/utils/projects";
+import { commercials, concepts, residentials } from "~/utils/projects";
 
 const Gallery = () => {
 	return (
@@ -29,6 +29,33 @@ const Gallery = () => {
 						);
 					})}
 				</ProjectCarousel>
+
+				<ProjectCarousel title="Commercial">
+					{commercials.map(({ imageSrc, title }, i) => {
+						return (
+							<ProjectCard
+								key={i}
+								src={imageSrc}
+								title={title}
+								link={"#"}
+							/>
+						);
+					})}
+				</ProjectCarousel>
+
+				<ProjectCarousel title="Concepts">
+					{concepts.map(({ imageSrc, title }, i) => {
+						return (
+							<ProjectCard
+								key={i}
+								src={imageSrc}
+								title={title}
+								link={"#"}
+							/>
+						);
+					})}
+				</ProjectCarousel>
+
 				<GetInTouch />
 			</main>
 		</>

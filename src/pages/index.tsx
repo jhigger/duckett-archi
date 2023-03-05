@@ -109,7 +109,7 @@ const Home: NextPage = () => {
 				)}
 
 				{["All", "Commercial"].includes(active) && (
-					<ProjectCarousel title="Residential">
+					<ProjectCarousel title="Commercial">
 						{commercials
 							.slice(0, 5)
 							.map(({ imageSrc, title }, i) => {
@@ -126,7 +126,7 @@ const Home: NextPage = () => {
 				)}
 
 				{["All", "Concepts"].includes(active) && (
-					<ProjectCarousel title="Residential">
+					<ProjectCarousel title="Concepts">
 						{concepts.slice(0, 5).map(({ imageSrc, title }, i) => {
 							return (
 								<ProjectCard
