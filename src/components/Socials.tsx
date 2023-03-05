@@ -1,18 +1,13 @@
-import {
-	FaFacebookSquare,
-	FaGoogle,
-	FaInstagram,
-	FaTwitter,
-} from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Socials = () => {
 	return (
 		<>
-			<li>
+			{/* <li>
 				<a href="#" target="_blank" rel="noopener noreferrer">
 					<FaTwitter size={24} />
 				</a>
-			</li>
+			</li> */}
 			<li>
 				<a
 					href="https://fb.com/DuckettArchitectureLtd"
@@ -22,16 +17,16 @@ const Socials = () => {
 					<FaFacebookSquare size={24} />
 				</a>
 			</li>
-			<li>
+			{/* <li>
 				<a href="#" target="_blank" rel="noopener noreferrer">
 					<FaInstagram size={24} />
 				</a>
-			</li>
-			<li>
+			</li> */}
+			{/* <li>
 				<a href="#" target="_blank" rel="noopener noreferrer">
 					<FaGoogle size={24} />
 				</a>
-			</li>
+			</li> */}
 		</>
 	);
 };
