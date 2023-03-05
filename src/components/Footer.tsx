@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 
 type FooterLinkType = {
 	title: string;
@@ -8,25 +9,25 @@ type FooterLinkType = {
 const Footer = () => {
 	const footerLinks: FooterLinkType[] = [
 		{
-			title: "footer link 1",
+			title: "Our Location",
 			href: "#",
 		},
 		{
-			title: "footer link 2",
+			title: "Career",
 			href: "#",
 		},
 		{
-			title: "footer link 3",
+			title: "About",
 			href: "#",
 		},
 		{
-			title: "footer link 4",
+			title: "Contact",
 			href: "#",
 		},
 	];
 
 	return (
-		<footer className="mt-8 grid grid-cols-1 place-items-center gap-16 p-8 text-center lg:grid-cols-2 xl:grid-cols-5">
+		<footer className="mt-8 grid grid-cols-1 place-items-center gap-16 p-8 text-center tracking-widest lg:grid-cols-2  xl:grid-cols-5">
 			<div className=" row-span-1 lg:col-span-2">
 				<Logo />
 			</div>
@@ -63,12 +64,12 @@ const Footer = () => {
 			<ul className="flex items-center justify-center gap-4">
 				<li>
 					<a href="#" target="_blank" rel="noopener noreferrer">
-						social link 1
+						<FaFacebookSquare size={24} />
 					</a>
 				</li>
 				<li>
 					<a href="#" target="_blank" rel="noopener noreferrer">
-						social link 2
+						<FaGoogle size={24} />
 					</a>
 				</li>
 			</ul>
