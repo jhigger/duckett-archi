@@ -9,9 +9,11 @@ import GetInTouch from "~/components/GetInTouch";
 import HeroCarousel from "~/components/HeroCarousel";
 import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
+import { commercials, concepts, residentials } from "~/utils/projects";
 
 const Home: NextPage = () => {
 	const [active, setActive] = useState("All");
+
 	const filters = [
 		{ title: "All" },
 		{ title: "Residential" },
@@ -91,16 +93,14 @@ const Home: NextPage = () => {
 
 				{["All", "Residential"].includes(active) && (
 					<ProjectCarousel title="Residential">
-						{Array(5)
-							.fill(null)
-							.map((_, i) => {
+						{residentials
+							.slice(0, 5)
+							.map(({ imageSrc, title }, i) => {
 								return (
 									<ProjectCard
 										key={i}
-										src={
-											"https://via.placeholder.com/1080x720?text=Image"
-										}
-										title={"Title"}
+										src={imageSrc}
+										title={title}
 										link={"#"}
 									/>
 								);
@@ -109,17 +109,15 @@ const Home: NextPage = () => {
 				)}
 
 				{["All", "Commercial"].includes(active) && (
-					<ProjectCarousel title="Commercial">
-						{Array(5)
-							.fill(null)
-							.map((_, i) => {
+					<ProjectCarousel title="Residential">
+						{commercials
+							.slice(0, 5)
+							.map(({ imageSrc, title }, i) => {
 								return (
 									<ProjectCard
 										key={i}
-										src={
-											"https://via.placeholder.com/1080x720?text=Image"
-										}
-										title={"Title"}
+										src={imageSrc}
+										title={title}
 										link={"#"}
 									/>
 								);
@@ -128,21 +126,17 @@ const Home: NextPage = () => {
 				)}
 
 				{["All", "Concepts"].includes(active) && (
-					<ProjectCarousel title="Concepts">
-						{Array(5)
-							.fill(null)
-							.map((_, i) => {
-								return (
-									<ProjectCard
-										key={i}
-										src={
-											"https://via.placeholder.com/1080x720?text=Image"
-										}
-										title={"Title"}
-										link={"#"}
-									/>
-								);
-							})}
+					<ProjectCarousel title="Residential">
+						{concepts.slice(0, 5).map(({ imageSrc, title }, i) => {
+							return (
+								<ProjectCard
+									key={i}
+									src={imageSrc}
+									title={title}
+									link={"#"}
+								/>
+							);
+						})}
 					</ProjectCarousel>
 				)}
 
