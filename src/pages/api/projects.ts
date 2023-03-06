@@ -17,13 +17,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		const folderDir = path.join("./public", category);
 		const filenames = fs.readdirSync(folderDir);
 
-		const projectFolder = filenames.map((name) => {
+		const projects = {};
+		filenames.forEach((name) => {
 			const projectDir = path.resolve("./public", category, name);
 			const images = fs.readdirSync(projectDir);
-			return { [name]: images };
+			Object.assign(projects, { [name]: images });
 		});
 
-		Object.assign(tree, { [path.basename(category)]: projectFolder });
+		Object.assign(tree, { [path.basename(category)]: projects });
 	});
 
 	return res.status(200).json(tree);
