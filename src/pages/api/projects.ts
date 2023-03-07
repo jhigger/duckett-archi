@@ -20,7 +20,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		const projects = {};
 		filenames.forEach((name) => {
 			const projectDir = path.resolve("./public", category, name);
-			const images = fs.readdirSync(projectDir);
+			const images = fs.readdirSync(projectDir).map((image) => {
+				return path.join(category, name, image);
+			});
 			Object.assign(projects, { [name]: images });
 		});
 

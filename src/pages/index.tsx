@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import "@splidejs/react-splide/css";
+import type { GetServerSideProps } from "next";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -9,9 +10,18 @@ import GetInTouch from "~/components/GetInTouch";
 import HeroCarousel from "~/components/HeroCarousel";
 import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
-import { commercials, concepts, residentials } from "~/utils/projects";
 
-const Home: NextPage = () => {
+interface Project {
+	imageSrc: string;
+	title: string;
+}
+interface HomeProps {
+	residentials: Project[];
+	commercials: Project[];
+	concepts: Project[];
+}
+
+const Home: NextPage<HomeProps> = ({ residentials, commercials, concepts }) => {
 	const [active, setActive] = useState("All");
 
 	const filters = [
@@ -144,6 +154,52 @@ const Home: NextPage = () => {
 			</main>
 		</>
 	);
+};
+
+interface ProjectFolders {
+	Commercial: { [key: string]: string[] };
+	Residential: { [key: string]: string[] };
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+	const data = await fetch("http://localhost:3000/api/projects")
+		.then(async (data) => {
+			const json = (await data.json()) as ProjectFolders;
+			return json;
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+
+	if (!data) return { props: {} };
+	const { Residential, Commercial }: ProjectFolders = data;
+
+	const getImages = (category: ProjectFolders[keyof ProjectFolders]) => {
+		return Object.keys(category).map((key) => {
+			const image = category[key]?.[0];
+			return {
+				imageSrc: image,
+				title: key,
+			};
+		});
+	};
+
+	const residentials = getImages(Residential);
+
+	const commercials = getImages(Commercial);
+
+	const concepts = Array<Project>(10).fill({
+		imageSrc: "https://via.placeholder.com/1080x720?text=Image",
+		title: "Title",
+	});
+
+	return {
+		props: {
+			residentials,
+			commercials,
+			concepts,
+		},
+	};
 };
 
 export default Home;
