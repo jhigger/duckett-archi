@@ -4,6 +4,7 @@ import GetInTouch from "~/components/GetInTouch";
 import HeroSection from "~/components/HeroSection";
 import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
+import { env } from "~/env.mjs";
 
 interface Project {
 	imageSrc: string;
@@ -78,7 +79,7 @@ interface ProjectFolders {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-	const data = await fetch("http://localhost:3000/api/projects")
+	const data = await fetch(env.NEXT_PUBLIC_HOST + "/api/projects")
 		.then(async (data) => {
 			const json = (await data.json()) as ProjectFolders;
 			return json;
