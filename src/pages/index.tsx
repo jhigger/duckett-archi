@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import "@splidejs/react-splide/css";
-import type { GetServerSideProps } from "next";
+import type { GetStaticProps } from "next";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -10,7 +10,7 @@ import GetInTouch from "~/components/GetInTouch";
 import HeroCarousel from "~/components/HeroCarousel";
 import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
-import { env } from "../env.mjs";
+import data from "~/projects.json";
 
 interface Project {
 	imageSrc: string;
@@ -162,17 +162,33 @@ interface ProjectFolders {
 	Residential: { [key: string]: string[] };
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-	const data = await fetch(env.NEXT_PUBLIC_HOST + "/api/projects")
-		.then(async (data) => {
-			const json = (await data.json()) as ProjectFolders;
-			return json;
-		})
-		.catch((err) => {
-			console.log(err);
-		});
+export const getStaticProps: GetStaticProps = () => {
+	// const data = await fetch("http://localhost:3000" + "/api/projects")
+	// 	.then(async (data) => {
+	// 		const json = (await data.json()) as ProjectFolders;
+	// 		return json;
+	// 	})
+	// 	.catch((err) => {
+	// 		console.log(err);
+	// 	});
 
-	if (!data) return { props: {} };
+	if (!data)
+		return {
+			props: {
+				residentials: Array<Project>(10).fill({
+					imageSrc: "https://via.placeholder.com/1080x720?text=Image",
+					title: "Title",
+				}),
+				commercials: Array<Project>(10).fill({
+					imageSrc: "https://via.placeholder.com/1080x720?text=Image",
+					title: "Title",
+				}),
+				concepts: Array<Project>(10).fill({
+					imageSrc: "https://via.placeholder.com/1080x720?text=Image",
+					title: "Title",
+				}),
+			},
+		};
 	const { Residential, Commercial }: ProjectFolders = data;
 
 	const getImages = (category: ProjectFolders[keyof ProjectFolders]) => {
