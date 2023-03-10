@@ -1,6 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import type { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
+import HeroSection from "~/components/HeroSection";
+import ImageGrid from "~/components/ImageGrid";
 import data from "~/projects.json";
 
 interface Project {
@@ -20,23 +23,41 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 	};
 
 	const capitalizeWords = (str: string) => {
-		return str.replace(/(?:^|\s)\S/g, (a) => {
+		return str.replace(/(?:^|\s)\S|(?:sb)/g, (a) => {
 			return a.toUpperCase();
 		});
 	};
 
 	if (!category || !name) return;
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const project: { [key: string]: ProjectProps[keyof ProjectProps] } = {
 		residential: residentials,
 		commercial: commercials,
 	};
 
 	return (
-		<div>
-			{capitalizeWords(category)} / {capitalizeWords(name)}
-			<img src={`/${project[category]?.[name]?.[0] ?? ""}`} alt="" />
-		</div>
+		<>
+			<Head>
+				<title>Gallery | Duckett Architecture</title>
+			</Head>
+			<main>
+				<HeroSection
+					title={capitalizeWords(category)}
+					imageSrc={"https://via.placeholder.com/1080x720?text=Image"}
+				/>
+
+				<div className="container mx-auto flex flex-col gap-8">
+					<section className="flex flex-col gap-4">
+						<h2 className="mb-4 text-2xl font-bold uppercase">
+							{capitalizeWords(name)}
+						</h2>
+
+						<ImageGrid />
+					</section>
+				</div>
+			</main>
+		</>
 	);
 };
 
