@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
