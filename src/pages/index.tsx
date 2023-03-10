@@ -44,7 +44,6 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 			<main>
 				<HeroCarousel>
 					<div className="relative flex h-full items-center justify-center">
-						X
 						<Image
 							src="/projects/Commercial/Turners%20North%20Shore/5.jpg"
 							alt="slide"
