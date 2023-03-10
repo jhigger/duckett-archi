@@ -66,7 +66,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 					</div>
 					<div className="relative flex h-full items-center justify-center">
 						<img
-							src="https://via.placeholder.com/1080x720?text=Image"
+							src="/projects/Residential/617%20Church%20Street/IMG_7548.JPG"
 							alt="slide"
 							className="h-full w-full object-cover object-center"
 						/>
@@ -77,7 +77,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 									We transform space... <br />
 									simply and effectively.
 								</p>
-								<Link href="/project/residential/waicola drive">
+								<Link href="/project/residential/617%20church%20street">
 									<Button
 										title="Sample Project"
 										className="mt-8 w-max bg-white text-primary"
@@ -88,7 +88,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 					</div>
 					<div className="relative flex h-full items-center justify-center">
 						<img
-							src="https://via.placeholder.com/1080x720?text=Image"
+							src="/projects/Commercial/Turners%20North%20Shore/a.jpg"
 							alt="slide"
 							className="h-full w-full object-cover object-center"
 						/>
@@ -99,7 +99,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 									We think outside the square to create all
 									manner of architecture design solution.
 								</p>
-								<Link href="/project/commercial/humpries construction">
+								<Link href="/project/commercial/turners">
 									<Button
 										title="Sample Project"
 										className="mt-8 w-max bg-white text-primary"
