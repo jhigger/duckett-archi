@@ -29,7 +29,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 		{ title: "All" },
 		{ title: "Residential" },
 		{ title: "Commercial" },
-		{ title: "Concepts" },
+		// { title: "Concepts" },
 	];
 
 	const handleActive = (title: string) => {
