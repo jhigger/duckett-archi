@@ -112,7 +112,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials, concepts }) => {
 										key={i}
 										src={imageSrc}
 										title={title}
-										link={"#"}
+										link={`project/residential/${title}`}
 									/>
 								);
 							})}
@@ -129,14 +129,14 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials, concepts }) => {
 										key={i}
 										src={imageSrc}
 										title={title}
-										link={"#"}
+										link={`project/commercial/${title}`}
 									/>
 								);
 							})}
 					</ProjectCarousel>
 				)}
 
-				{["All", "Concepts"].includes(active) && (
+				{/* {["All", "Concepts"].includes(active) && (
 					<ProjectCarousel title="Concepts">
 						{concepts.slice(0, 5).map(({ imageSrc, title }, i) => {
 							return (
@@ -149,7 +149,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials, concepts }) => {
 							);
 						})}
 					</ProjectCarousel>
-				)}
+				)} */}
 
 				<GetInTouch />
 			</main>

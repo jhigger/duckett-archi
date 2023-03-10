@@ -35,7 +35,7 @@ const Gallery = ({ residentials, commercials, concepts }: GalleryProps) => {
 								key={i}
 								src={imageSrc}
 								title={title}
-								link={"#"}
+								link={`project/residential/${title}`}
 							/>
 						);
 					})}
@@ -48,13 +48,13 @@ const Gallery = ({ residentials, commercials, concepts }: GalleryProps) => {
 								key={i}
 								src={imageSrc}
 								title={title}
-								link={"#"}
+								link={`project/commercial/${title}`}
 							/>
 						);
 					})}
 				</ProjectCarousel>
 
-				<ProjectCarousel title="Concepts">
+				{/* <ProjectCarousel title="Concepts">
 					{concepts.map(({ imageSrc, title }, i) => {
 						return (
 							<ProjectCard
@@ -65,7 +65,7 @@ const Gallery = ({ residentials, commercials, concepts }: GalleryProps) => {
 							/>
 						);
 					})}
-				</ProjectCarousel>
+				</ProjectCarousel> */}
 
 				<GetInTouch />
 			</main>
