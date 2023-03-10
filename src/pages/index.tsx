@@ -163,15 +163,6 @@ interface ProjectFolders {
 }
 
 export const getStaticProps: GetStaticProps = () => {
-	// const data = await fetch("http://localhost:3000" + "/api/projects")
-	// 	.then(async (data) => {
-	// 		const json = (await data.json()) as ProjectFolders;
-	// 		return json;
-	// 	})
-	// 	.catch((err) => {
-	// 		console.log(err);
-	// 	});
-
 	if (!data)
 		return {
 			props: {

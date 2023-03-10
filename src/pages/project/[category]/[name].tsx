@@ -12,12 +12,6 @@ interface ProjectProps {
 	commercials: { [key: string]: string[] };
 }
 
-const capitalizeWords = (str: string) => {
-	return str.replace(/(?:^|\s)\S/g, (a) => {
-		return a.toUpperCase();
-	});
-};
-
 const Project = ({ residentials, commercials }: ProjectProps) => {
 	const router = useRouter();
 	const { category, name } = router.query as {
@@ -25,9 +19,15 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 		name?: string;
 	};
 
+	const capitalizeWords = (str: string) => {
+		return str.replace(/(?:^|\s)\S/g, (a) => {
+			return a.toUpperCase();
+		});
+	};
+
 	if (!category || !name) return;
 
-	const project: { [key: string]: { [key: string]: string[] } } = {
+	const project: { [key: string]: ProjectProps[keyof ProjectProps] } = {
 		residential: residentials,
 		commercial: commercials,
 	};
