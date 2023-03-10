@@ -18,7 +18,6 @@ const ImageGrid = ({ images }: ImageGridProps) => {
 		setIsViewerOpen(false);
 	};
 
-	console.log(images);
 	return (
 		<div className="grid w-full grid-cols-12 place-items-center gap-2 overflow-hidden">
 			{/* src={`/${project[category]?.[name]?.[0] ?? ""}`} */}
