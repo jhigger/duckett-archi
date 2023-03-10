@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 import "@splidejs/react-splide/css";
 import type { GetStaticProps } from "next";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Button from "~/components/Button";
@@ -44,9 +44,12 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 			<main>
 				<HeroCarousel>
 					<div className="relative flex h-full items-center justify-center">
-						<img
-							src="https://via.placeholder.com/1080x720?text=Image"
+						X
+						<Image
+							src="/projects/Commercial/Turners%20North%20Shore/5.jpg"
 							alt="slide"
+							width={1280}
+							height={720}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
@@ -65,9 +68,11 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						</div>
 					</div>
 					<div className="relative flex h-full items-center justify-center">
-						<img
+						<Image
 							src="/projects/Residential/617%20Church%20Street/IMG_7548.JPG"
 							alt="slide"
+							width={1280}
+							height={720}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
@@ -87,9 +92,11 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						</div>
 					</div>
 					<div className="relative flex h-full items-center justify-center">
-						<img
+						<Image
 							src="/projects/Commercial/Turners%20North%20Shore/a.jpg"
 							alt="slide"
+							width={1280}
+							height={720}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
@@ -109,9 +116,11 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						</div>
 					</div>
 					<div className="relative flex h-full items-center justify-center">
-						<img
-							src="https://via.placeholder.com/1080x720?text=Image"
+						<Image
+							src="/images/7.jpg"
 							alt="slide"
+							width={720}
+							height={1280}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>

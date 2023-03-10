@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
 
@@ -11,9 +11,11 @@ type Props = {
 const ProjectCard = ({ src, title, link }: Props) => {
 	return (
 		<div className="group relative h-min overflow-hidden rounded-3xl">
-			<img
+			<Image
+				src={`/${src.replaceAll("\\", "/")}`}
 				alt="project"
-				src={src}
+				width={640}
+				height={360}
 				className="h-[512px] w-[384px] object-cover object-center"
 			/>
 			<div className="absolute top-0 flex h-full w-full flex-col justify-end gap-4 bg-primary p-8 opacity-60 transition-all duration-300 ease-in-out group-hover:top-0 lg:top-[100%]"></div>
