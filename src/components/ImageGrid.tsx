@@ -35,6 +35,9 @@ const ImageGrid = ({ images }: ImageGridProps) => {
 					disableScroll={false}
 					closeOnClickOutside={true}
 					onClose={closeImageViewer}
+					backgroundStyle={{
+						backgroundColor: "rgba(0, 0, 0, 0.9)",
+					}}
 				/>
 			)}
 		</div>

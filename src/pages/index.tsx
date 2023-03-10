@@ -52,26 +52,83 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<h2 className="text-4xl font-bold">Title</h2>
-								<p className="text-xl">
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Dignissimos, alias.
-								</p>
-								<Button
-									title="BUTTON CTA"
-									className="mt-8 w-max bg-white text-primary"
-								/>
+								<h1 className="text-4xl font-bold">
+									Welcome To Duckett Architecture
+								</h1>
+								<Link href="/about">
+									<Button
+										title="More Info"
+										className="mt-8 w-max bg-white text-primary"
+									/>
+								</Link>
 							</div>
 						</div>
 					</div>
-					<div className="flex h-full items-center justify-center bg-blue-500">
-						1
+					<div className="relative flex h-full items-center justify-center">
+						<img
+							src="https://via.placeholder.com/1080x720?text=Image"
+							alt="slide"
+							className="h-full w-full object-cover object-center"
+						/>
+						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
+						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
+							<div className="flex flex-col gap-4">
+								<p className="text-4xl leading-normal">
+									We transform space... <br />
+									simply and effectively.
+								</p>
+								<Link href="/project/residential/waicola drive">
+									<Button
+										title="Sample Project"
+										className="mt-8 w-max bg-white text-primary"
+									/>
+								</Link>
+							</div>
+						</div>
 					</div>
-					<div className="flex h-full items-center justify-center bg-red-500">
-						2
+					<div className="relative flex h-full items-center justify-center">
+						<img
+							src="https://via.placeholder.com/1080x720?text=Image"
+							alt="slide"
+							className="h-full w-full object-cover object-center"
+						/>
+						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
+						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
+							<div className="flex flex-col gap-4">
+								<p className="text-4xl leading-normal">
+									We think outside the square to create all
+									manner of architecture design solution.
+								</p>
+								<Link href="/project/commercial/humpries construction">
+									<Button
+										title="Sample Project"
+										className="mt-8 w-max bg-white text-primary"
+									/>
+								</Link>
+							</div>
+						</div>
 					</div>
-					<div className="flex h-full items-center justify-center bg-green-500">
-						3
+					<div className="relative flex h-full items-center justify-center">
+						<img
+							src="https://via.placeholder.com/1080x720?text=Image"
+							alt="slide"
+							className="h-full w-full object-cover object-center"
+						/>
+						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
+						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
+							<div className="flex flex-col gap-4">
+								<p className="text-4xl leading-normal">
+									Vision transforms a simple design brief into
+									a client&apos;s dream.
+								</p>
+								<Link href="/contact">
+									<Button
+										title="Get In Touch"
+										className="mt-8 w-max bg-white text-primary"
+									/>
+								</Link>
+							</div>
+						</div>
 					</div>
 				</HeroCarousel>
 
