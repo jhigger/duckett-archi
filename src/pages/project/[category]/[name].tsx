@@ -53,7 +53,7 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 							{capitalizeWords(name)}
 						</h2>
 
-						<ImageGrid />
+						<ImageGrid images={project[category]?.[name]?.map(item => `/${item}`) ?? []} />
 					</section>
 				</div>
 			</main>
