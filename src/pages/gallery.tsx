@@ -16,7 +16,7 @@ interface GalleryProps {
 	concepts: Project[];
 }
 
-const Gallery = ({ residentials, commercials, concepts }: GalleryProps) => {
+const Gallery = ({ residentials, commercials }: GalleryProps) => {
 	return (
 		<>
 			<Head>

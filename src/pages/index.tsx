@@ -22,7 +22,7 @@ interface HomeProps {
 	concepts: Project[];
 }
 
-const Home: NextPage<HomeProps> = ({ residentials, commercials, concepts }) => {
+const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 	const [active, setActive] = useState("All");
 
 	const filters = [
