@@ -45,7 +45,7 @@ interface ProjectFolders {
 	Residential: { [key: string]: string[] };
 }
 
-const { Residential }: ProjectFolders = data;
+const { Residential, Commercial }: ProjectFolders = data;
 
 const getTitles = (category: ProjectFolders[keyof ProjectFolders]) => {
 	return Object.keys(category).map((key) => {
@@ -57,6 +57,8 @@ const getTitles = (category: ProjectFolders[keyof ProjectFolders]) => {
 
 export const getStaticPaths: GetStaticPaths = () => {
 	const residentials = getTitles(Residential);
+	const commercials = getTitles(Commercial);
+
 	const map = residentials.map((project) => {
 		return {
 			params: {
@@ -66,8 +68,17 @@ export const getStaticPaths: GetStaticPaths = () => {
 		};
 	});
 
+	const map2 = commercials.map((project) => {
+		return {
+			params: {
+				category: "commercial",
+				name: project.title.toLowerCase(),
+			},
+		};
+	});
+
 	return {
-		paths: map,
+		paths: map.concat(map2),
 		fallback: false,
 	};
 };
@@ -85,9 +96,10 @@ export const getStaticProps: GetStaticProps = () => {
 	};
 
 	const residentials = getImages(Residential);
+	const commercials = getImages(Commercial);
 
 	return {
-		props: { residentials },
+		props: { residentials, commercials },
 	};
 };
 
