@@ -99,7 +99,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 									We think outside the square to create all
 									manner of architecture design solution.
 								</p>
-								<Link href="/project/commercial/turners">
+								<Link href="/project/commercial/turners north shore">
 									<Button
 										title="Sample Project"
 										className="mt-8 w-max bg-white text-primary"
