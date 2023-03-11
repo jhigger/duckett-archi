@@ -1,7 +1,6 @@
 import type { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import HeroSection from "~/components/HeroSection";
 import ImageGrid from "~/components/ImageGrid";
 import data from "~/projects.json";
 
@@ -41,10 +40,9 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 				<title>Gallery | Duckett Architecture</title>
 			</Head>
 			<main>
-				<HeroSection
-					title={capitalizeWords(category)}
-					imageSrc={"https://via.placeholder.com/1080x720?text=Image"}
-				/>
+				<h1 className="my-12 text-center text-5xl font-bold tracking-widest text-primary">
+					{capitalizeWords(category)}
+				</h1>
 
 				<div className="container mx-auto flex flex-col gap-8">
 					<section className="flex flex-col gap-4">
@@ -52,7 +50,13 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 							{capitalizeWords(name)}
 						</h2>
 
-						<ImageGrid images={project[category]?.[name]?.map(item => `/${item}`) ?? []} />
+						<ImageGrid
+							images={
+								project[category]?.[name]?.map(
+									(item) => `/${item}`
+								) ?? []
+							}
+						/>
 					</section>
 				</div>
 			</main>

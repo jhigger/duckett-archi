@@ -1,7 +1,6 @@
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import GetInTouch from "~/components/GetInTouch";
-import HeroSection from "~/components/HeroSection";
 import ProjectCard from "~/components/ProjectCard";
 import ProjectCarousel from "~/components/ProjectCarousel";
 import data from "~/projects.json";
@@ -23,10 +22,9 @@ const Gallery = ({ residentials, commercials }: GalleryProps) => {
 				<title>Gallery | Duckett Architecture</title>
 			</Head>
 			<main>
-				<HeroSection
-					title="Gallery"
-					imageSrc="https://via.placeholder.com/1080x720?text=Image"
-				/>
+				<h1 className="my-12 text-center text-5xl font-bold tracking-widest text-primary">
+					Gallery
+				</h1>
 
 				<ProjectCarousel title="Residential">
 					{residentials.map(({ imageSrc, title }, i) => {

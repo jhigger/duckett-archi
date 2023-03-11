@@ -1,6 +1,5 @@
 import Head from "next/head";
 import GetInTouch from "~/components/GetInTouch";
-import HeroSection from "~/components/HeroSection";
 
 const About = () => {
 	const list = [
@@ -24,10 +23,9 @@ const About = () => {
 				<title>About | Duckett Architecture</title>
 			</Head>
 			<main>
-				<HeroSection
-					title="About Us"
-					imageSrc="https://via.placeholder.com/1080x720?text=Image"
-				/>
+				<h1 className="my-12 text-center text-5xl font-bold tracking-widest text-primary">
+					About Us
+				</h1>
 
 				<div className="container mx-auto flex flex-col gap-8">
 					<section className="flex flex-col gap-4">
