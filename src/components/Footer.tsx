@@ -10,11 +10,7 @@ const Footer = () => {
 	const footerLinks: FooterLinkType[] = [
 		{
 			title: "Our Location",
-			href: "#",
-		},
-		{
-			title: "Career",
-			href: "#",
+			href: "https://goo.gl/maps/T1KRJVidMAowkGTw5",
 		},
 		{
 			title: "About",
