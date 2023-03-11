@@ -47,8 +47,10 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<Image
 							src="/images/door.jpg"
 							alt="slide"
-							width={1024}
-							height={576}
+							width={854}
+							height={480}
+							quality={60}
+							loading="eager"
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
@@ -70,8 +72,10 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<Image
 							src="/projects/Residential/617%20Church%20Street/IMG_7548.JPG"
 							alt="slide"
-							width={1280}
-							height={720}
+							width={854}
+							height={480}
+							quality={60}
+							loading="lazy"
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
@@ -94,8 +98,10 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<Image
 							src="/projects/Commercial/Turners%20North%20Shore/a.jpg"
 							alt="slide"
-							width={1280}
-							height={720}
+							width={854}
+							height={480}
+							quality={60}
+							loading="lazy"
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
@@ -118,8 +124,10 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<Image
 							src="/images/7.jpg"
 							alt="slide"
-							width={720}
-							height={1280}
+							width={480}
+							height={854}
+							quality={60}
+							loading="lazy"
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
