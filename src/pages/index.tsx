@@ -45,11 +45,10 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 				<HeroCarousel>
 					<div className="relative flex h-full items-center justify-center">
 						<Image
-							src="/projects/Commercial/Turners%20North%20Shore/5.jpg"
+							src="/images/door.jpg"
 							alt="slide"
-							width={960}
-							height={1440}
-							quality={50}
+							width={1024}
+							height={576}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
