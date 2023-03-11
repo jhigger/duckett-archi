@@ -49,6 +49,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 							alt="slide"
 							width={960}
 							height={1440}
+							quality={50}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
