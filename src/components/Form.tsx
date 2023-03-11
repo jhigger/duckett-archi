@@ -24,12 +24,12 @@ const Form = () => {
 					placeholder="Email"
 					className="h-16 w-full rounded bg-gray-200 p-4"
 				></input>
+				<textarea
+					name="message"
+					placeholder="Message"
+					className="col-span-full h-44 w-full rounded bg-gray-200 p-4"
+				></textarea>
 			</div>
-			<textarea
-				name="message"
-				placeholder="Message"
-				className="h-44 w-full rounded bg-gray-200 p-4"
-			></textarea>
 			<div className="flex items-center justify-center lg:block">
 				<Button
 					type="submit"
