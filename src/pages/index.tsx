@@ -47,8 +47,8 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<Image
 							src="/projects/Commercial/Turners%20North%20Shore/5.jpg"
 							alt="slide"
-							width={1280}
-							height={720}
+							width={960}
+							height={1440}
 							className="h-full w-full object-cover object-center"
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
