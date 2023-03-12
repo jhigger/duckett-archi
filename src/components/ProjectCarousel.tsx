@@ -49,7 +49,11 @@ const ProjectCarousel = ({ title, children }: Props) => {
 				}}
 			/>
 			<div className="self-end">
-				<Arrows splideRef={splideRef} color="black" className="mr-4">
+				<Arrows
+					splideRef={splideRef}
+					color="black"
+					className="mr-4 dark:invert"
+				>
 					<SlideNumbering index={index} length={length} />
 				</Arrows>
 			</div>

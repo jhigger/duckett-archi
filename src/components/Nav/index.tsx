@@ -1,9 +1,12 @@
+import { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../Logo";
 import NavLink from "./Link";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
 
-const Nav = () => {
+type NavProps = { darkMode: boolean; toggleDarkMode: () => void };
+
+const Nav = ({ darkMode, toggleDarkMode }: NavProps) => {
 	const links = [
 		{ title: "Home", href: "/" },
 		{ title: "About", href: "/about" },
@@ -25,14 +28,22 @@ const Nav = () => {
 					{links.map(({ title, href }) => {
 						return <NavLink key={href} title={title} href={href} />;
 					})}
+					<button onClick={toggleDarkMode}>
+						{darkMode ? <FaMoon /> : <FaSun />}
+					</button>
 				</div>
 
-				<button
-					className="mr-4 block rounded p-2 text-primary hover:bg-primary hover:text-white lg:hidden"
-					onClick={toggleMenu}
-				>
-					<GiHamburgerMenu size={24} />
-				</button>
+				<div className="flex gap-4">
+					<button
+						className="mr-4 block rounded p-2 text-primary hover:bg-primary hover:text-white lg:hidden"
+						onClick={toggleMenu}
+					>
+						<GiHamburgerMenu size={24} />
+					</button>
+					<button onClick={toggleDarkMode}>
+						{darkMode ? <FaMoon /> : <FaSun />}
+					</button>
+				</div>
 			</div>
 
 			{open && (

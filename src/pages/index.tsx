@@ -56,7 +56,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<h1 className="text-4xl font-bold">
+								<h1 className="text-4xl font-bold text-black">
 									Welcome To Duckett Architecture
 								</h1>
 								<Link href="/about">
@@ -81,7 +81,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<p className="text-3xl font-semibold leading-normal">
+								<p className="text-3xl font-semibold leading-normal text-black">
 									We transform space... <br />
 									simply and effectively.
 								</p>
@@ -107,7 +107,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<p className="text-3xl font-semibold leading-normal">
+								<p className="text-3xl font-semibold leading-normal text-black">
 									We think outside the square to create all
 									manner of architecture design solution.
 								</p>
@@ -133,7 +133,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<p className="text-3xl font-semibold leading-normal">
+								<p className="text-3xl font-semibold leading-normal text-black">
 									Vision transforms a simple design brief into
 									a client&apos;s dream.
 								</p>
