@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const email = "nekuvoto@mailgolem.com";
+const email = "admin@duckettarchitecture.co.nz";
 
 const Form = () => {
 	return (
