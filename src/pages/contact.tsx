@@ -19,13 +19,13 @@ const Contact = () => {
 						allowFullScreen={false}
 						loading="lazy"
 						referrerPolicy="no-referrer-when-downgrade"
-						className="aspect-[9/16] w-full rounded-3xl object-cover object-center md:aspect-video"
+						className="aspect-[9/16] w-full rounded-3xl object-cover object-center md:aspect-[16/5]"
 					></iframe>
 				</section>
 
 				<div className="container mx-auto flex flex-col gap-8 last:mb-32">
 					<section className="flex flex-col gap-4">
-						<h2 className="mb-4 text-3xl uppercase text-primary">
+						<h2 className="mb-4 text-2xl font-bold uppercase text-primary">
 							Keep in touch
 						</h2>
 						<div className="grid grid-cols-1 gap-8 tracking-widest lg:w-10/12 lg:grid-cols-2 lg:self-end">
@@ -90,7 +90,7 @@ const Contact = () => {
 					</section>
 
 					<section className="flex flex-col gap-4">
-						<h2 className="mb-4 text-3xl uppercase text-primary">
+						<h2 className="mb-4 text-2xl font-bold uppercase text-primary">
 							Work with us
 						</h2>
 						<div className="flex flex-col gap-2 lg:w-10/12 lg:self-end">
