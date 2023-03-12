@@ -33,9 +33,9 @@ const Nav = ({ darkMode, toggleDarkMode }: NavProps) => {
 					</button>
 				</div>
 
-				<div className="flex gap-4">
+				<div className="mr-4 flex gap-4 lg:hidden">
 					<button
-						className="mr-4 block rounded p-2 text-primary hover:bg-primary hover:text-white lg:hidden"
+						className="rounded p-2 text-primary hover:bg-primary hover:text-white"
 						onClick={toggleMenu}
 					>
 						<GiHamburgerMenu size={24} />
