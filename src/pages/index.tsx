@@ -81,13 +81,13 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<p className="text-4xl leading-normal">
+								<p className="text-3xl font-semibold leading-normal">
 									We transform space... <br />
 									simply and effectively.
 								</p>
 								<Link href="/project/residential/617%20church%20street">
 									<Button
-										title="Sample Project"
+										title="See Project"
 										className="mt-8 w-max bg-white text-primary"
 									/>
 								</Link>
@@ -107,13 +107,13 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<p className="text-4xl leading-normal">
+								<p className="text-3xl font-semibold leading-normal">
 									We think outside the square to create all
 									manner of architecture design solution.
 								</p>
 								<Link href="/project/commercial/turners north shore">
 									<Button
-										title="Sample Project"
+										title="See Project"
 										className="mt-8 w-max bg-white text-primary"
 									/>
 								</Link>
@@ -133,7 +133,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
 							<div className="flex flex-col gap-4">
-								<p className="text-4xl leading-normal">
+								<p className="text-3xl font-semibold leading-normal">
 									Vision transforms a simple design brief into
 									a client&apos;s dream.
 								</p>

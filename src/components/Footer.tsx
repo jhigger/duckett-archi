@@ -27,7 +27,7 @@ const Footer = () => {
 			<div className=" row-span-1 lg:col-span-2">
 				<Logo />
 			</div>
-			<div className="flex flex-col items-center justify-center gap-4">
+			<div className="flex flex-col items-center justify-center gap-4 text-sm lg:text-base">
 				<p className="font-bold">&copy; Duckett Architecture Ltd.</p>
 				<p className="font-bold">All Rights Reserved</p>
 				<p>
@@ -42,7 +42,7 @@ const Footer = () => {
 					</a>
 				</p>
 			</div>
-			<ul className="row-span-2 flex flex-col items-center justify-center gap-2 lg:row-span-1">
+			<ul className="row-span-2 flex flex-col items-center justify-center gap-2 text-sm lg:row-span-1 lg:text-base">
 				{footerLinks.map(({ title, href }, i) => {
 					return (
 						<li key={i}>

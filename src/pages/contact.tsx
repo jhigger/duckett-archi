@@ -10,7 +10,7 @@ const Contact = () => {
 			</Head>
 			<main>
 				<section className="container relative mx-auto my-8">
-					<h1 className="my-12 text-center text-5xl font-bold tracking-widest text-primary">
+					<h1 className="my-12 text-center text-4xl font-bold tracking-widest text-primary">
 						Contact Us
 					</h1>
 

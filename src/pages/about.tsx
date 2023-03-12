@@ -23,13 +23,13 @@ const About = () => {
 				<title>About | Duckett Architecture</title>
 			</Head>
 			<main>
-				<h1 className="my-12 text-center text-5xl font-bold tracking-widest text-primary">
+				<h1 className="my-12 text-center text-4xl font-bold tracking-widest text-primary">
 					About Us
 				</h1>
 
 				<div className="container mx-auto flex flex-col gap-8">
 					<section className="flex flex-col gap-4">
-						<h2 className="mb-4 text-2xl uppercase text-primary">
+						<h2 className="mb-4 text-2xl font-bold uppercase text-primary">
 							Our Story
 						</h2>
 						<p className="lg:w-10/12 lg:self-end">
@@ -76,7 +76,7 @@ const About = () => {
 					</section>
 
 					<section className="flex flex-col gap-4">
-						<h2 className="mb-4 text-2xl uppercase text-primary">
+						<h2 className="mb-4 text-2xl font-bold uppercase text-primary">
 							What we do
 						</h2>
 						<p className="lg:w-10/12 lg:self-end">

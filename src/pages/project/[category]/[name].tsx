@@ -40,7 +40,7 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 				<title>Gallery | Duckett Architecture</title>
 			</Head>
 			<main>
-				<h1 className="my-12 text-center text-5xl font-bold tracking-widest text-primary">
+				<h1 className="my-12 text-center text-4xl font-bold tracking-widest text-primary">
 					{capitalizeWords(category)}
 				</h1>
 
