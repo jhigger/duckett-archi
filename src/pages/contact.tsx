@@ -19,7 +19,7 @@ const Contact = () => {
 						allowFullScreen={false}
 						loading="lazy"
 						referrerPolicy="no-referrer-when-downgrade"
-						className="aspect-[9/16] w-full rounded-3xl object-cover object-center md:aspect-[16/5]"
+						className="aspect-[9/16] w-full rounded-2xl object-cover object-center md:aspect-[16/5]"
 					></iframe>
 				</section>
 

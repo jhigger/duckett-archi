@@ -23,7 +23,7 @@ const HeroCarousel = ({ children }: Props) => {
 	}, [splideRef]);
 
 	return (
-		<section className="relative mb-16 overflow-hidden rounded-3xl">
+		<section className="relative mb-16 overflow-hidden rounded-2xl">
 			<Content
 				ref={splideRef}
 				slides={children}
