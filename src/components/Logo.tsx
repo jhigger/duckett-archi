@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/logo.png";
+import icon from "/public/DA_LOGO.png";
 
 const Logo = () => {
 	return (
@@ -11,7 +12,15 @@ const Logo = () => {
 				width={516}
 				height={104}
 				loading="eager"
-				className="max-w-[10rem] sm:max-w-sm lg:max-w-full"
+				className="hidden sm:block lg:max-w-full"
+			/>
+			<Image
+				src={icon}
+				alt="logo"
+				width={40}
+				height={40}
+				loading="eager"
+				className="block rounded sm:hidden lg:max-w-full"
 			/>
 		</Link>
 	);
