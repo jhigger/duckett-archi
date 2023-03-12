@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { useCallback, useState } from "react";
 import ImageViewer from "react-simple-image-viewer";
 
@@ -48,55 +49,68 @@ interface ImagesProp {
 	openImageViewer: (index: number) => void;
 }
 
+const LowQualityImage = ({
+	images,
+	openImageViewer,
+	index,
+}: ImagesProp & { index: number }) => {
+	return (
+		<Image
+			src={`${(images[index] as string).replaceAll("\\", "/")}`}
+			alt="sample"
+			onClick={() => openImageViewer(index)}
+			className="h-full w-full object-cover object-center"
+			width={1280}
+			height={720}
+			quality={1}
+			loading="eager"
+		/>
+	);
+};
+
 const SixImages = ({ images, openImageViewer }: ImagesProp) => {
 	return (
 		<>
 			<div className="col-span-8 row-span-2 aspect-video w-full overflow-hidden">
-				<img
-					src={images[0]}
-					alt="sample"
-					onClick={() => openImageViewer(0)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={0}
 				/>
 			</div>
 			<div className="col-span-4 row-span-1 aspect-[16/8.934] w-full overflow-hidden">
-				<img
-					src={images[1]}
-					alt="sample"
-					onClick={() => openImageViewer(1)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={1}
 				/>
 			</div>
 			<div className="col-span-4 row-span-1 aspect-[16/8.934] w-full overflow-hidden">
-				<img
-					src={images[2]}
-					alt="sample"
-					onClick={() => openImageViewer(2)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={2}
 				/>
 			</div>
 			<div className="col-span-6 row-span-1 aspect-video w-full overflow-hidden">
-				<img
-					src={images[3]}
-					alt="sample"
-					onClick={() => openImageViewer(3)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={3}
 				/>
 			</div>
 			<div className="col-span-3 row-span-1 aspect-[9/10.255] w-full overflow-hidden">
-				<img
-					src={images[4]}
-					alt="sample"
-					onClick={() => openImageViewer(4)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={4}
 				/>
 			</div>
 			<div className="col-span-3 row-span-1 aspect-[9/10.255] w-full overflow-hidden">
-				<img
-					src={images[5]}
-					alt="sample"
-					onClick={() => openImageViewer(5)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={5}
 				/>
 			</div>
 		</>
@@ -107,43 +121,38 @@ const FiveImages = ({ images, openImageViewer }: ImagesProp) => {
 	return (
 		<>
 			<div className="col-span-8 row-span-2 aspect-video w-full overflow-hidden">
-				<img
-					src={images[0]}
-					alt="sample"
-					onClick={() => openImageViewer(0)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={0}
 				/>
 			</div>
 			<div className="col-span-4 row-span-2 aspect-[9/10.21] w-full overflow-hidden">
-				<img
-					src={images[1]}
-					alt="sample"
-					onClick={() => openImageViewer(1)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={1}
 				/>
 			</div>
 			<div className="col-span-6 row-span-1 aspect-video w-full overflow-hidden">
-				<img
-					src={images[2]}
-					alt="sample"
-					onClick={() => openImageViewer(2)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={2}
 				/>
 			</div>
 			<div className="col-span-3 row-span-1 aspect-[9/10.255] w-full overflow-hidden">
-				<img
-					src={images[3]}
-					alt="sample"
-					onClick={() => openImageViewer(3)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={3}
 				/>
 			</div>
 			<div className="col-span-3 row-span-1 aspect-[9/10.255] w-full overflow-hidden">
-				<img
-					src={images[4]}
-					alt="sample"
-					onClick={() => openImageViewer(4)}
-					className="h-full w-full object-cover object-center"
+				<LowQualityImage
+					images={images}
+					openImageViewer={openImageViewer}
+					index={4}
 				/>
 			</div>
 		</>
