@@ -88,7 +88,7 @@ const About = () => {
 							developers alike with the best well-informed advice
 							on taking their next steps to further their vision.
 						</p>
-						<ul className="flex list-disc flex-col gap-2 pl-6 lg:w-10/12 lg:self-end">
+						<ul className="grid list-disc gap-2 pl-6 md:grid-cols-2 lg:w-10/12 lg:self-end">
 							{list.map((item, i) => (
 								<li key={i} className="font-bold">
 									{item}
