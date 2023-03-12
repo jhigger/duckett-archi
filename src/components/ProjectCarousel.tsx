@@ -25,7 +25,7 @@ const ProjectCarousel = ({ title, children }: Props) => {
 
 	return (
 		<section className="mb-16 flex flex-col gap-8">
-			<h2 className="text-2xl font-bold tracking-widest lg:text-4xl">
+			<h2 className="text-xl font-semibold tracking-widest lg:text-4xl">
 				{title}
 			</h2>
 			<Content
