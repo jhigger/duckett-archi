@@ -62,7 +62,7 @@ const LowQualityImage = ({
 			className="h-full w-full object-cover object-center"
 			width={1280}
 			height={720}
-			quality={1}
+			quality={50}
 			priority
 		/>
 	);
