@@ -11,7 +11,6 @@ const Logo = () => {
 				alt="logo"
 				width={516}
 				height={104}
-				loading="eager"
 				className="hidden sm:block lg:max-w-full"
 				priority
 			/>
@@ -20,7 +19,6 @@ const Logo = () => {
 				alt="logo"
 				width={40}
 				height={40}
-				loading="eager"
 				className="block rounded sm:hidden lg:max-w-full"
 				priority
 			/>
