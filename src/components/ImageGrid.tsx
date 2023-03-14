@@ -64,6 +64,7 @@ const LowQualityImage = ({
 			height={720}
 			quality={1}
 			loading="eager"
+			priority
 		/>
 	);
 };

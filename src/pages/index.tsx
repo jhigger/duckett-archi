@@ -52,6 +52,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 							quality={60}
 							loading="eager"
 							className="h-full w-full object-cover object-center"
+							priority
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
