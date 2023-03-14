@@ -50,7 +50,6 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 							width={854}
 							height={480}
 							quality={60}
-							loading="eager"
 							className="h-full w-full object-cover object-center"
 							priority
 						/>
@@ -76,8 +75,8 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 							width={854}
 							height={480}
 							quality={60}
-							loading="lazy"
 							className="h-full w-full object-cover object-center"
+							priority
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
@@ -102,8 +101,8 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 							width={854}
 							height={480}
 							quality={60}
-							loading="lazy"
 							className="h-full w-full object-cover object-center"
+							priority
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
@@ -128,8 +127,8 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 							width={480}
 							height={854}
 							quality={60}
-							loading="lazy"
 							className="h-full w-full object-cover object-center"
+							priority
 						/>
 						<div className="clip absolute hidden h-full w-full flex-col justify-center bg-primary opacity-60 md:block"></div>
 						<div className="absolute hidden h-full w-full grid-cols-2 place-items-center p-8 md:grid">
