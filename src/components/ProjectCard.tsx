@@ -40,7 +40,7 @@ const ProjectCard = ({ src, title, link }: Props) => {
 						alt="project"
 						width={640}
 						height={360}
-						quality={50}
+						quality={1}
 						loading="lazy"
 						className="h-[512px] w-[384px] object-cover object-center"
 					/>
