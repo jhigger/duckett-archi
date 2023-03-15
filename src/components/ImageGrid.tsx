@@ -20,14 +20,33 @@ const ImageGrid = ({ images }: ImageGridProps) => {
 	};
 
 	return (
-		<div className="grid w-full grid-cols-12 place-items-center gap-2 overflow-hidden">
-			{/* src={`/${project[category]?.[name]?.[0] ?? ""}`} */}
-			{images.length === 5 && (
-				<FiveImages images={images} openImageViewer={openImageViewer} />
-			)}
-			{images.length >= 6 && (
-				<SixImages images={images} openImageViewer={openImageViewer} />
-			)}
+		<>
+			<div className="hidden w-full grid-cols-12 place-items-center gap-2 overflow-hidden md:grid">
+				{images.length === 5 && (
+					<FiveImages
+						images={images}
+						openImageViewer={openImageViewer}
+					/>
+				)}
+				{images.length >= 6 && (
+					<SixImages
+						images={images}
+						openImageViewer={openImageViewer}
+					/>
+				)}
+			</div>
+			<div className="flex flex-col gap-2 md:hidden">
+				{images.map((_, i) => {
+					return (
+						<LowQualityImage
+							key={i}
+							images={images}
+							openImageViewer={openImageViewer}
+							index={i}
+						/>
+					);
+				})}
+			</div>
 			{isViewerOpen && (
 				<ImageViewer
 					src={images}
@@ -40,7 +59,7 @@ const ImageGrid = ({ images }: ImageGridProps) => {
 					}}
 				/>
 			)}
-		</div>
+		</>
 	);
 };
 
