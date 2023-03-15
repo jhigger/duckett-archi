@@ -28,7 +28,11 @@ const Nav = ({ darkMode, toggleDarkMode }: NavProps) => {
 					{links.map(({ title, href }) => {
 						return <NavLink key={href} title={title} href={href} />;
 					})}
-					<button onClick={toggleDarkMode}>
+					<button
+						role="button"
+						aria-label="Dark mode"
+						onClick={toggleDarkMode}
+					>
 						{darkMode ? <FaMoon /> : <FaSun />}
 					</button>
 				</div>
@@ -40,7 +44,11 @@ const Nav = ({ darkMode, toggleDarkMode }: NavProps) => {
 					>
 						<GiHamburgerMenu size={24} />
 					</button>
-					<button onClick={toggleDarkMode}>
+					<button
+						role="button"
+						aria-label="Dark mode"
+						onClick={toggleDarkMode}
+					>
 						{darkMode ? <FaMoon /> : <FaSun />}
 					</button>
 				</div>
