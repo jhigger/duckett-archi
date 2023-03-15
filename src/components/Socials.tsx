@@ -8,8 +8,9 @@ const Socials = () => {
 					<FaTwitter size={24} />
 				</a>
 			</li> */}
-			<li aria-label="Social link">
+			<li>
 				<a
+					aria-label="Social link"
 					href="https://fb.com/DuckettArchitectureLtd"
 					target="_blank"
 					rel="noopener noreferrer"
