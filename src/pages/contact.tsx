@@ -72,7 +72,7 @@ const Contact = () => {
 									<div className="grid grid-cols-1 lg:grid-cols-2">
 										<p>Monday - Friday</p>
 										<p className="font-normal">
-											09:00 - 05:00
+											08:30 am - 05:30 pm
 										</p>
 										<p>Saturday - Sunday</p>
 										<p className="font-normal">Closed</p>
