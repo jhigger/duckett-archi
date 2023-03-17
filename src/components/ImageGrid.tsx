@@ -78,7 +78,7 @@ const LowQualityImage = ({
 			src={`${(images[index] as string).replaceAll("\\", "/")}`}
 			alt="sample"
 			onClick={() => openImageViewer(index)}
-			className="h-full w-full object-cover object-center"
+			className="h-full w-full overflow-hidden object-cover object-center"
 			width={1280}
 			height={720}
 			quality={1}
