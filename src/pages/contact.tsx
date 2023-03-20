@@ -56,7 +56,7 @@ const Contact = () => {
 									<p className="text-2xl">
 										06{" "}
 										<span className="text-gray-500">
-											356 735
+											356 7355
 										</span>
 									</p>
 									<p className="text-2xl">
