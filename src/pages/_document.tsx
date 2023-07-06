@@ -27,6 +27,10 @@ class MyDocument extends Document {
 						rel="canonical"
 						href="https://www.duckettarchitecture.co.nz/"
 					/>
+					<meta
+						name="google-site-verification"
+						content="QM1QKn7wn_NGvS2JXj_D6hg2VhYDaq004JN5w1KQl70"
+					/>
 				</Head>
 				<body>
 					<Main />
