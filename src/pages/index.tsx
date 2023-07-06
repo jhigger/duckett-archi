@@ -39,7 +39,7 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 	return (
 		<>
 			<Head>
-				<title>Duckett Architecture</title>
+				<title>Duckett Architecture Palmerston North</title>
 			</Head>
 			<main>
 				<HeroCarousel>
