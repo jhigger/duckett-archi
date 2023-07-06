@@ -23,6 +23,10 @@ class MyDocument extends Document {
 					/>
 					<link rel="icon" href="/favicon.ico" />
 					<link rel="shortcut icon" href="/favicon.ico" />
+					<link
+						rel="canonical"
+						href="https://www.duckettarchitecture.co.nz/"
+					/>
 				</Head>
 				<body>
 					<Main />
