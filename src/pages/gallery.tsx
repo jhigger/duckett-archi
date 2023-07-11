@@ -20,6 +20,10 @@ const Gallery = ({ residentials, commercials }: GalleryProps) => {
 		<>
 			<Head>
 				<title>Gallery | Duckett Architecture</title>
+				<link
+					rel="canonical"
+					href="https://www.duckettarchitecture.co.nz/gallery"
+				/>
 			</Head>
 			<main>
 				<h1 className="my-12 text-center text-4xl font-bold tracking-widest text-primary">

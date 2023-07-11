@@ -7,6 +7,10 @@ const Contact = () => {
 		<>
 			<Head>
 				<title>Contact | Duckett Architecture</title>
+				<link
+					rel="canonical"
+					href="https://www.duckettarchitecture.co.nz/contact"
+				/>
 			</Head>
 			<main>
 				<section className="container relative mx-auto my-8">

@@ -39,7 +39,11 @@ const Home: NextPage<HomeProps> = ({ residentials, commercials }) => {
 	return (
 		<>
 			<Head>
-				<title>Duckett Architecture Palmerston North</title>
+				<title>Duckett Architecture | Palmerston North</title>
+				<link
+					rel="canonical"
+					href="https://www.duckettarchitecture.co.nz/"
+				/>
 			</Head>
 			<main>
 				<HeroCarousel>

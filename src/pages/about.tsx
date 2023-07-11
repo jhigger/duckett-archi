@@ -21,6 +21,10 @@ const About = () => {
 		<>
 			<Head>
 				<title>About | Duckett Architecture</title>
+				<link
+					rel="canonical"
+					href="https://www.duckettarchitecture.co.nz/about"
+				/>
 			</Head>
 			<main>
 				<h1 className="my-12 text-center text-4xl font-bold tracking-widest text-primary">
