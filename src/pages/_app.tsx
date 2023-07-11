@@ -46,7 +46,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 				<NextNProgress color="#F6A01E" height={4} />
 				<Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 				<Component {...pageProps} />
-				<Footer />
+				<Footer darkMode={darkMode} />
 			</div>
 		</div>
 	);

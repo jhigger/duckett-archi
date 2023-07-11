@@ -6,7 +6,7 @@ type FooterLinkType = {
 	href: string;
 };
 
-const Footer = () => {
+const Footer = ({ darkMode }: { darkMode: boolean }) => {
 	const footerLinks: FooterLinkType[] = [
 		{
 			title: "Our Location",
@@ -25,7 +25,7 @@ const Footer = () => {
 	return (
 		<footer className="mt-8 grid grid-cols-1 place-items-center gap-16 p-8 text-center tracking-widest lg:grid-cols-2  xl:grid-cols-5">
 			<div className=" row-span-1 lg:col-span-2">
-				<Logo />
+				<Logo darkMode={darkMode} />
 			</div>
 			<div className="flex flex-col items-center justify-center gap-4 text-sm lg:text-base">
 				<p className="font-bold">&copy; Duckett Architecture Ltd.</p>
