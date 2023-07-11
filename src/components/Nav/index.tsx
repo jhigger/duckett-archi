@@ -22,7 +22,7 @@ const Nav = ({ darkMode, toggleDarkMode }: NavProps) => {
 
 	return (
 		<nav className="mb-8 flex flex-col">
-			<div className="flex items-center justify-between">
+			<div className="flex items-center justify-between py-4">
 				<Logo darkMode={darkMode} />
 				<div className="mb-4 mr-4 hidden gap-4 self-end uppercase lg:flex">
 					{links.map(({ title, href }) => {
