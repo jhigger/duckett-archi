@@ -38,6 +38,10 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 		<>
 			<Head>
 				<title>Gallery | Duckett Architecture</title>
+				<link
+					rel="canonical"
+					href={`https://www.duckettarchitecture.co.nz/project/${category}/${name}`}
+				/>
 			</Head>
 			<main>
 				<h1 className="my-12 text-center text-4xl font-bold tracking-widest text-primary">
