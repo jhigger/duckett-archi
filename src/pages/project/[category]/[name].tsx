@@ -37,7 +37,9 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 	return (
 		<>
 			<Head>
-				<title>{capitalizeWords(name)} | Duckett Architecture</title>
+				<title>
+					{`${capitalizeWords(name)} | Duckett Architecture`}
+				</title>
 				<link
 					rel="canonical"
 					href={`https://www.duckettarchitecture.co.nz/project/${category}/${encodeURIComponent(
