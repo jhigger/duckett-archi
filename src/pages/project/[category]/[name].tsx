@@ -40,7 +40,9 @@ const Project = ({ residentials, commercials }: ProjectProps) => {
 				<title>Gallery | Duckett Architecture</title>
 				<link
 					rel="canonical"
-					href={`https://www.duckettarchitecture.co.nz/project/${category}/${name}`}
+					href={encodeURIComponent(
+						`https://www.duckettarchitecture.co.nz/project/${category}/${name}`
+					)}
 				/>
 			</Head>
 			<main>
