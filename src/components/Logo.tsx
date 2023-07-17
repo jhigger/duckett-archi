@@ -4,11 +4,11 @@ import logo_light from "/public/logo_light.jpg";
 import logo_dark from "/public/logo_dark.png";
 import icon from "/public/DA_LOGO.png";
 
-const Logo = ({ darkMode }: { darkMode: boolean }) => {
+const Logo = ({ darkMode = true }: { darkMode: boolean }) => {
 	return (
 		<Link href="/">
 			<Image
-				src={darkMode ? logo_dark : logo_light}
+				src={!darkMode ? logo_light : logo_dark}
 				alt="logo"
 				width={516}
 				height={104}
