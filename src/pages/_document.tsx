@@ -19,7 +19,7 @@ class MyDocument extends Document {
 					/>
 					<meta
 						name="keywords"
-						content="Duckett Architecture, Architecture, Engineering & Design, Construction, Architects, Palmerston North, Architectural Designers, Palmerston North architects, Architect in Palmerston North"
+						content="Duckett Architecture, Architecture, Engineering & Design, Construction, Architects, Palmerston North, Architectural Designers, Palmerston North architects, Architect in Palmerston North, Colin Duckett"
 					/>
 					<link rel="icon" href="/favicon.ico" />
 					<link rel="shortcut icon" href="/favicon.ico" />
